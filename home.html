@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akmal Ali | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    .light-mode {
+      --bg-color: #ffffff;
+    }
+
+    .dark-mode {
+      --bg-color: #1f1f1f;
+      --text-color: #ffffff;
+    }
+
+    .theme-text {
+      color: var(--text-color);
+      transition: color 0.3s;
+    } 
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+  </style>
+</head>
+<body class="font-[Poppins] px-6 py-8 space-y-10 dark-mode">
+
+  <!-- Navbar -->
+  <header class="bg-gradient-to-r from-[#1a1f2e] to-[#121622] mx-auto mt-4 w-[70%] shadow-lg rounded-full">
+    <div class="container mx-auto px-4 py-4 flex justify-center items-center">
+      <nav class="flex space-x-6 text-center">
+        <a href="#home" class="text-white font-semibold px-4 py-2 rounded-full hover:bg-[#333]">Home</a>
+        <a href="#about" class="text-white font-semibold px-4 py-2 rounded-full hover:bg-[#333]">About</a>
+        <a href="#experience" class="text-white font-semibold px-4 py-2 rounded-full hover:bg-[#333]">Experience</a>
+        <a href="#projects" class="text-white font-semibold px-4 py-2 rounded-full hover:bg-[#333]">Projects</a>
+        <a href="#contact" class="text-white font-semibold px-4 py-2 rounded-full hover:bg-[#333]">Contact</a>
+        <button id="theme-toggle" class="text-2xl px-4 py-2 rounded-full hover:bg-green-500 transition duration-300">
+          <i id="theme-icon" class="fas fa-moon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="text-center space-y-6 animate-fade-in">
+    <h1 class="text-4xl font-bold">Welcome to My Portfolio!</h1>
+    <img src="image/pasfoto.jpg" alt="Profile" class="mx-auto w-40 h-40 object-cover rounded-full shadow-lg">
+    <h2 class="text-xl max-w-2xl mx-auto theme-text">
+      I'm <span class="text-green-400 font-semibold">Akmal Ali</span>, an undergraduate with enthusiast and passion for web development, especially frontend development. I also have a strong interest in UI/UX Design.
+    </h2>
+    <button class="bg-green-600 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition duration-300" onclick="alert('Resume will be added soon.')">
+      View Resume
+    </button>
+    <div class="flex justify-center space-x-4 mt-4">
+  <a href="https://www.instagram.com/m._akmal_a/" target="_blank" class="text-white bg-[#E1306C] hover:bg-[#C13584] p-3 rounded-full transition">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://x.com/Akmal_aja1/" target="_blank" class="text-white bg-[#1DA1F2] hover:bg-[#0d8ddb] p-3 rounded-full transition">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/muhammad-akmal-3388b62a2/" target="_blank" class="text-white bg-[#0077B5] hover:bg-[#005f91] p-3 rounded-full transition">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+</div>
+
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">Skills</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-[#2d2d2d] p-6 rounded-lg shadow hover:shadow-green-400 transition">
+        <h3 class="text-green-400 font-semibold text-xl mb-3">UI/UX</h3>
+        <ul class="space-y-2">
+          <li class="bg-[#3a3a3a] text-gray-100 px-4 py-2 rounded">Figma</li>
+          <li class="bg-[#3a3a3a] text-gray-100 px-4 py-2 rounded">Adobe Photoshop</li>
+          <li class="bg-[#3a3a3a] text-gray-100 px-4 py-2 rounded">Canva</li>
+        </ul>
+      </div>
+      <div class="bg-[#2d2d2d] p-6 rounded-lg shadow hover:shadow-green-400 transition">
+        <h3 class="text-green-400 font-semibold text-xl mb-3">Frontend</h3>
+        <ul class="space-y-2">
+          <li class="bg-[#3a3a3a] text-gray-100 px-4 py-2 rounded">Vue.js</li>
+          <li class="bg-[#3a3a3a] text-gray-100 px-4 py-2 rounded">React</li>
+          <li class="bg-[#3a3a3a] text-gray-100 px-4 py-2 rounded">Bootstrap</li>
+        </ul>
+      </div>
+      <div class="bg-[#2d2d2d] p-6 rounded-lg shadow hover:shadow-green-400 transition">
+        <h3 class="text-green-400 font-semibold text-xl mb-3">Backend</h3>
+        <ul class="space-y-2">
+          <li class="bg-[#3a3a3a] text-gray-100 px-4 py-2 rounded">Laravel</li>
+        </ul>
+      </div>
+      <div class="bg-[#2d2d2d] p-6 rounded-lg shadow hover:shadow-green-400 transition">
+        <h3 class="text-green-400 font-semibold text-xl mb-3">Database</h3>
+        <ul class="space-y-2">
+          <li class="bg-[#3a3a3a] text-gray-100 px-4 py-2 rounded">MySQL</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="max-w-3xl mx-auto text-center space-y-4">
+    <h2 class="text-3xl font-bold">Experience</h2>
+    <div class="grid grid-cols-1">
+      <div class="bg-[#2d2d2d] p-6 rounded-lg shadow hover:shadow-green-400 transition">
+        <p class="text-gray-100">October 2024 – March 2025</p>
+        <h3 class="text-xl text-green-400 font-semibold">Team Lead as Junior Software Developer</h3>
+        <p class="text-gray-100 font-semibold">at</p>
+        <p class="text-orange-400 font-semibold">PT Metanouva Informatika</p>
+        <p class="text-gray-100">Developing an attendance management website as a final project as a team lead.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-[#2d2d2d] p-6 rounded-lg shadow hover:shadow-green-400 transition">
+        <h3 class="text-green-400 font-semibold text-xl mb-3">Project 1</h3>
+        <p class="text-gray-100">Description of Project 1</p>
+      </div>
+      <div class="bg-[#2d2d2d] p-6 rounded-lg shadow hover:shadow-green-400 transition">
+        <h3 class="text-green-400 font-semibold text-xl mb-3">Project 2</h3>
+        <p class="text-gray-100">Description of Project 2</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-10 text-center">
+    <p class="theme-text">© 2024 Akmal Ali. All rights reserved.</p>
+    <div class="flex justify-center space-x-4 mt-2">
+      <a href="#" class="text-green-400 hover:text-green-500"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Scroll Animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('opacity-100', 'translate-y-0');
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    document.querySelectorAll('section').forEach(el => {
+      el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+      observer.observe(el);
+    });
+
+    // Dark/Light Mode Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+
+    if (localStorage.getItem('theme') === 'light') {
+      document.body.classList.remove('dark-mode');
+      document.body.classList.add('light-mode');
+      themeIcon.classList.remove('fa-moon');
+      themeIcon.classList.add('fa-sun');
+    } else {
+      document.body.classList.add('dark-mode');
+      themeIcon.classList.add('fa-moon');
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.body.classList.contains('dark-mode');
+      document.body.classList.toggle('dark-mode');
+      document.body.classList.toggle('light-mode');
+
+      if (isDark) {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+        localStorage.setItem('theme', 'light');
+      } else {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  </script>
+
+</body>
+</html>
