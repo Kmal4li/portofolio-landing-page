@@ -1,15 +1,14 @@
 {
-  "version": 2,
   "builds": [
     {
-      "src": "pages/home.html",
+      "src": "home.html",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/",
-      "dest": "pages/home.html"
+      "src": "/image/(.*)",
+      "dest": "/image/$1"
     }
   ]
 }
