@@ -8,8 +8,8 @@
   ],
   "routes": [
     {
-      "src": "/image/(.*)",
-      "dest": "/image/$1"
+      "src": "/",
+      "dest": "pages/home.html"
     }
   ]
 }
